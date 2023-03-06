@@ -17,12 +17,6 @@ module.exports = {
                 exclude: /node_modules/,
             },
             {
-                test: /\.(js|jsx)$/,
-                exclude: /(node_modules|bower_components)/,
-                loader: 'babel-loader',
-                options: { presets: ['@babel/env','@babel/preset-react'] },
-              },
-            {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'],
             },
